@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ayaz Image Gallery</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="lightbox.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    </head>
+    <body>
+
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="/img/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="photos.html">PHOTOS</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="">ABOUT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            
+        <div class="container">
+            <div class="gallery">
+                <a href="images/1.jpg" data-lightbox="models">
+                    <img src="images/1.jpg">
+                </a>
+
+                <a href="images/2.jpg" data-lightbox="models">
+                    <img src="images/2.jpg">
+                </a>
+
+                <a href="images/3.jpg" data-lightbox="models">
+                    <img src="images/3.jpg">
+                </a>
+
+                <a href="images/4.jpg" data-lightbox="models">
+                    <img src="images/4.jpg">
+                </a>
+
+                <a href="imagesg/5.jpg" data-lightbox="models">
+                    <img src="images/5.jpg">
+                </a>
+
+                <a href="images/6.jpg" data-lightbox="models">
+                    <img src="images/6.jpg">
+                </a>
+
+                <a href="images/7.jpg" data-lightbox="models">
+                    <img src="images/7.jpg">
+                </a>
+
+                <a href="images/8.jpg" data-lightbox="models">
+                    <img src="images/8.jpg">
+                </a>
+            </div>
+        </div>
+
+        
+        <!------JavaScript for Toggle Menu------ -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+    <script src="lightbox-plus-jquery.js"></script>
+
+    </body>
+</html>
